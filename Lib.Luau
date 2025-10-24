@@ -2960,12 +2960,12 @@ function Library:CreateWindow(...)
 		Tabs = {};
 	};
 	
-	Library.AccentColor = ThemeWindow.AccentColor
-	Library.FontColor = ThemeWindow.FontColor
-	Library.MainColor = ThemeWindow.MainColor
-	Library.BackgroundColor = ThemeWindow.BackgroundColor
-	Library.OutlineColor = ThemeWindow.OutlineColor
-	Library.RiskColor = ThemeWindow.RiskColor
+	Library.AccentColor = ThemeWindow.AccentColor or Library.AccentColor
+	Library.FontColor = ThemeWindow.FontColor or Library.FontColor
+	Library.MainColor = ThemeWindow.MainColor or Library.MainColor
+	Library.BackgroundColor = ThemeWindow.BackgroundColor or Library.BackgroundColor
+	Library.OutlineColor = ThemeWindow.OutlineColor or Library.OutlineColor
+	Library.RiskColor = ThemeWindow.RiskColor or Library.RiskColor
 
 	local Outer = Library:Create('Frame', {
 		AnchorPoint = Config.AnchorPoint,
