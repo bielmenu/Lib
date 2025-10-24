@@ -2934,8 +2934,11 @@ end;
 
 function Library:CreateWindow(...)
 	local Arguments = { ... }
-	local ThemeWindow = Arguments.Tema
+	local ThemeWindow = Arguments[1].Tema or {}
 	local Config = { AnchorPoint = Vector2.zero }
+	
+	warn(Arguments[1])
+	warn(Arguments[2])
 	
 	if type(...) == 'table' then
 		Config = ...;
