@@ -1516,7 +1516,7 @@ do
 					Library:AddToRegistry(Button.Label, { TextColor3 = 'AccentColor' })
 
 					Button.Label.TextColor3 = Library.AccentColor
-					Button.Label.Text = 'Are you sure?'
+					Button.Label.Text = 'Tem certeza?'
 					Button.Locked = true
 
 					local clicked = WaitForEvent(Button.Outer.InputBegan, 0.5, ValidateClick)
