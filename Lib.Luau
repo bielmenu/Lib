@@ -2085,9 +2085,9 @@ do
 
 		local function Round(Value)
 			if Slider.Rounding == 0 then
-				return math.round(Value)
+				return math.floor(Value + 0.5);
 			end;
-			return tonumber(string.format('%.' .. Slider.Rounding .. 'f', Value))
+			return tonumber(string.format('%.' .. Slider.Rounding .. 'f', Value));
 		end;
 
 
