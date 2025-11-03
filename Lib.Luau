@@ -2085,12 +2085,11 @@ do
 
 		local function Round(Value)
 			if Slider.Rounding == 0 then
-				return math.floor(Value);
+				return math.round(Value)
 			end;
-
-
 			return tonumber(string.format('%.' .. Slider.Rounding .. 'f', Value))
 		end;
+
 
 		function Slider:GetValueFromXOffset(X)
 			return Round(Library:MapValue(X, 0, Slider.MaxSize, Slider.Min, Slider.Max));
